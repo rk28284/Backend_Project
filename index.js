@@ -8,12 +8,12 @@ app.use(express.json());
 app.use("/users", userRouter);
 app.use("/posts", postRouter);
 
-app.listen(8080, async () => {
-  try {
-    await connection;
-    console.log("connected with db");
-  } catch (error) {
-    console.log(error);
-  }
-  console.log("listening port 8080");
-});
+// app.listen(8080, async () => {
+//   try {
+//     await connection;
+//     console.log("connected with db");
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   console.log("listening port 8080");
+// });
